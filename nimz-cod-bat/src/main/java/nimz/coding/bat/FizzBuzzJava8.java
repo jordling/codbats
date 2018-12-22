@@ -10,7 +10,7 @@ public class FizzBuzzJava8 {
 		int start = 10;
 		int end = 15;
 		IntStream.rangeClosed(start, end)
-				.mapToObj((i) -> i % 3 == 0 ? (i % 5 == 0 ? "FizzBuzz" : "Fizz") : (i % 5 == 0 ? "Buzz" : i))
+				.mapToObj(i -> i % 3 == 0 ? (i % 5 == 0 ? "FizzBuzz" : "Fizz") : (i % 5 == 0 ? "Buzz" : i))
 				.forEach(System.out::println);
 //
 //		IntStream.rangeClosed(0, 100).forEach(i -> {
