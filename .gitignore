@@ -1,0 +1,9 @@
+.DS_Store
+.classpath
+.gradle
+.project
+.settings
+build
+target
+/QuizyeRoot/.tern-project
+/QuizyeRoot/WebContent/
