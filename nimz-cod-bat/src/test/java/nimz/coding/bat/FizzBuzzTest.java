@@ -5,6 +5,8 @@ import static org.junit.Assert.assertArrayEquals;
 
 import org.junit.Test;
 
+import nimz.coding.bat.arrays.FizzBuzz;
+
 public class FizzBuzzTest {
 
 	FizzBuzz fb = new FizzBuzz();
