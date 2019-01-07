@@ -9,14 +9,13 @@ import nimz.coding.bat.arrays.FizzBuzz;
 
 public class FizzBuzzTest {
 
-	FizzBuzz fb = new FizzBuzz();
 
 	@Test
 	public void testFizzBuzz() {
 		String expected[] = { "1", "2", "Fizz", "4", "Buzz" };
 		int actual[] = { 1, 6 };
 
-		assertArrayEquals(expected, fb.fizzBuzz(actual));
+		assertArrayEquals(expected, FizzBuzz.fizzBuzz(actual));
 
 	}
 
@@ -24,7 +23,7 @@ public class FizzBuzzTest {
 	public void testFizzBuzzAlt() {
 		String expected[] = { "FizzBuzz", "31", "32", "Fizz", "34", "Buzz", "Fizz", "37", "38", "Fizz" };
 		int actual[] = { 30, 40 };
-		assertArrayEquals(expected, fb.fizzBuzzAlt(actual));
+		assertArrayEquals(expected, FizzBuzz.fizzBuzzAlt(actual));
 
 	}
 
@@ -32,13 +31,13 @@ public class FizzBuzzTest {
 	public void testFizzBuzzNull() {
 		int input[] = null;
 
-		fb.fizzBuzz(input);
+		FizzBuzz.fizzBuzz(input);
 
 	}
 	@Test (expected = NegativeArraySizeException.class)
 	public void testFizzBuzzNegativeSize() {
 		int input[] = {-1,-2};
-		fb.fizzBuzz(input);
+		FizzBuzz.fizzBuzz(input);
 
 	}
 

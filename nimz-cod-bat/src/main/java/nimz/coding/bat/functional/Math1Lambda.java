@@ -16,7 +16,7 @@ public class Math1Lambda {
     }
 
     private static List<Integer> math1(List<Integer> nums) {
-	return nums.stream()
+	return nums.parallelStream()
 	           .map(e -> (e + 1) * 10)
 	           .collect(Collectors.toList());
 

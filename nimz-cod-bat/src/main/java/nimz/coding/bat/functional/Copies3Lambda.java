@@ -21,3 +21,5 @@ public class Copies3Lambda {
 	              .collect(Collectors.toList());
     }
 }
+
+
